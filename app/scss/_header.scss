@@ -1,4 +1,7 @@
 .header {
+  position: relative;
+  z-index: 1;
+
   //hamburger open style
   &.open {
     .header__toggle {
@@ -34,12 +37,11 @@
     }
   }
 
-  nav{
+  nav {
     position: relative;
     background-color: $white;
     padding-top: 1.0625rem;
     padding-bottom: 1.0625rem;
-
   }
 
   &__logo {
@@ -74,16 +76,13 @@
     padding: 1.625rem;
     border-radius: 5px;
 
-    a{
+    a {
       display: block;
       padding: 0.625rem;
-      color:$darkBlue;
+      color: $darkBlue;
       text-align: center;
     }
-
-
   }
-
 
   &__links {
     a {
@@ -115,15 +114,6 @@
           opacity: 1;
         }
       }
-    }
-  }
-  &__cta {
-    font-size: $font-sm;
-    color: white;
-    transition: opacity 300ms ease-in-out;
-
-    &:hover {
-      opacity: 0.75;
     }
   }
 }
